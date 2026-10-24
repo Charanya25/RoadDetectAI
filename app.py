@@ -13,7 +13,16 @@ st.set_page_config(
     layout="wide"
 )
 
-MODEL_PATH = os.getenv("MODEL_PATH", "best.pt")
+MODEL_PATH = "/tmp/best.pt"
+
+MODEL_URL = (
+    "https://huggingface.co/"
+    "charanyakoneti/roaddetectai-weights/"
+    "resolve/main/best.pt"
+)
+
+if not os.path.exists(MODEL_PATH):
+    urllib.request.urlretrieve(MODEL_URL, MODEL_PATH)
 
 st.markdown("""
 <style>
