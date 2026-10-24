@@ -12,7 +12,7 @@ st.set_page_config(
     layout="wide"
 )
 
-MODEL_PATH = "/content/drive/MyDrive/RoadDetectAI/training/pothole_model/weights/best.pt"
+MODEL_PATH = os.getenv("MODEL_PATH", "best.pt")
 
 st.markdown("""
 <style>
