@@ -1,4 +1,5 @@
 import os
+import urllib.request
 import streamlit as st
 from ultralytics import YOLO
 from PIL import Image
