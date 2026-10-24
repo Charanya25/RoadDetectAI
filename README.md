@@ -53,5 +53,40 @@ Confirm the exact boundary handling in the application code.
 ## Examples
 Add at least three reviewed successful prediction images and three confirmed failure images here before submission.
 
+### Successful Detection Examples
+
+The following examples demonstrate pothole detection by RoadDetectAI, including predicted bounding boxes and confidence scores.
+
+![Successful Detection Example 1](successful_example_1.jpg)
+
+![Successful Detection Example 2](successful_example_2.jpg)
+
+![Successful Detection Example 3](successful_example_3.jpg)
+
+### Failed Detection Examples
+
+These examples illustrate possible false negatives, where the model may fail to detect a pothole present in the image. Confirm each case against the original image and its ground-truth annotations before submission.
+
+#### Failed Example 1
+![Failed Detection Example 1](failed_example_1.jpg)
+
+**Explanation:** The model did not detect a labeled pothole at the selected confidence threshold.
+
+#### Failed Example 2
+![Failed Detection Example 2](failed_example_2.jpg)
+
+**Explanation:** The model missed a labeled pothole, potentially due to visibility, lighting, or unclear boundaries.
+
+#### Failed Example 3
+![Failed Detection Example 3](failed_example_3.jpg)
+
+**Explanation:** The model returned no detections for an image containing a labeled pothole.
+
+These examples illustrate a limitation of the model: it may miss potholes under challenging image conditions.
+
+## Deployment
+
+**Hugging Face Spaces URL:** To be added after deployment.
+
 ## Deployment
 Hugging Face Spaces URL: Add the live URL after deployment.
