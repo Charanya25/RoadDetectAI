@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# Model weights
+*.pt
+*.onnx
+*.engine
+
+# Dataset and large generated files
+dataset/
+training/
+runs/
+*.cache
+
+# Local temporary files
+.streamlit/secrets.toml
+streamlit.log
+cloudflared.log
